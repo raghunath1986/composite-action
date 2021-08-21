@@ -14,3 +14,7 @@ runs:
         env="${{ inputs.env }}"
         echo "you entered ${{ inputs.env }}".
         echo "env value is : $env"
+        if [ $env == "dev" ]; then
+        echo ${{ secrets.dev_secret}}
+        if [ $env == "qa" ]; then
+        echo ${{ secrets.qa_secret }}
