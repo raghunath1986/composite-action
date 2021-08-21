@@ -10,7 +10,7 @@ runs:
   using: "composite"
   steps:
     - shell: bash
-      run: | 
-        
+      run: |
+        env="${{ inputs.env }}"
         echo "you entered ${{ inputs.env }}".
-    
+        echo "env value is : $env"
