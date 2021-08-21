@@ -11,6 +11,6 @@ runs:
   steps:
     - shell: bash
       run: | 
-        environment = ${{ inputs.env }}
+        
         echo "you entered ${{ inputs.env }}".
     
